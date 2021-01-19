@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.katalon</groupId>
+  <artifactId>testops-cucumber</artifactId>
+  <name>TestOps Cucumber</name>
+  <version>1.0.0</version>
+  <url>https://github.com/katalon-studio/testops-cucumber</url>
+  <description>Katalon TestOps SDK</description>
+
+  <organization>
+    <name>Katalon, LLC.</name>
+    <url>https://www.katalon.com</url>
+  </organization>
+
+  <licenses>
+    <license>
+      <name>License Agreement for Katalon Automation Framework</name>
+      <url>https://github.com/katalon-studio/utils/blob/master/LICENSE</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <name>Katalon Team</name>
+      <email>info@katalon.com</email>
+      <organization>Katalon, LLC.</organization>
+      <organizationUrl>https://www.katalon.com</organizationUrl>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:git://github.com:katalon-studio/testops-cucumber.git</connection>
+    <developerConnection>scm:git:git@github.com:katalon-studio/testops-cucumber.git</developerConnection>
+    <url>https://github.com/katalon-studio/testops-cucumber</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <issueManagement>
+    <system>github</system>
+    <url>https://github.com/katalon-studio/testops-cucumber/issues</url>
+  </issueManagement>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <junit.version>4.13.1</junit.version>
+    <cucumber.version>6.9.1</cucumber.version>
+    <testops.commons.version>1.1.5</testops.commons.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-core</artifactId>
+      <version>${cucumber.version}</version>
+      <scope>compile</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.katalon</groupId>
+      <artifactId>testops-commons</artifactId>
+      <version>${testops.commons.version}</version>
+      <scope>compile</scope>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+
+  </build>
+</project>
