@@ -7,7 +7,7 @@
   <groupId>com.katalon</groupId>
   <artifactId>testops-cucumber</artifactId>
   <name>TestOps Cucumber</name>
-  <version>1.0.0</version>
+  <version>0.0.1.SNAPSHOT</version>
   <url>https://github.com/katalon-studio/testops-cucumber</url>
   <description>Katalon TestOps SDK</description>
 
