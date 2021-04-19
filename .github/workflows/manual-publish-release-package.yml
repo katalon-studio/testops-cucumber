@@ -1,4 +1,4 @@
-name: Manual publish
+name: Manual Publish Release Package
 
 on:
   workflow_dispatch:
