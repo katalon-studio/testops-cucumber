@@ -69,7 +69,6 @@
     <junit.version>4.13.1</junit.version>
     <cucumber.version>6.9.1</cucumber.version>
     <testops.commons.version>1.1.6</testops.commons.version>
-
   </properties>
 
   <profiles>
@@ -177,7 +176,6 @@
     </profile>
   </profiles>
 
-
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -199,7 +197,6 @@
       <version>${testops.commons.version}</version>
       <scope>compile</scope>
     </dependency>
-
   </dependencies>
 
   <build>
