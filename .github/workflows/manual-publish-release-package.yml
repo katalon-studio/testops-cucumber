@@ -1,13 +1,10 @@
-name: Publish release package
+name: Manual Publish Release Package
 
 on:
-  push:
-    branches:
-      - release
+  workflow_dispatch:
 
 jobs:
   publish:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -38,3 +35,12 @@ jobs:
           echo $GPG_PRIVATE_KEY | base64 --decode | gpg --import --no-tty --batch --yes
           mvn --settings settings.xml clean deploy -P release
           mvn nexus-staging:release -P release --settings settings.xml
+
+      - name: Upload Version Maven Package In Github
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ls -la
+          VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
+          gh release create v$VERSION
