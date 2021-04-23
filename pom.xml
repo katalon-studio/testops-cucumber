@@ -7,7 +7,7 @@
   <groupId>com.katalon</groupId>
   <artifactId>testops-cucumber</artifactId>
   <name>TestOps Cucumber</name>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.1.0</version>
   <url>https://github.com/katalon-studio/testops-cucumber</url>
   <description>Katalon TestOps SDK</description>
 
@@ -68,7 +68,7 @@
     <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
 
     <junit.version>4.13.1</junit.version>
-    <cucumber.version>6.9.1</cucumber.version>
+    <cucumber.version>6.0.0</cucumber.version>
     <testops.commons.version>1.1.6</testops.commons.version>
   </properties>
 
